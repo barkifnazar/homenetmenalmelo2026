@@ -337,7 +337,7 @@ function buildPoulePanel(matches, pouleName) {
             <tbody>${standingRows || '<tr><td colspan="8" style="text-align:center;padding:1rem;color:var(--muted)">Nog geen gespeelde wedstrijden</td></tr>'}</tbody>
           </table>
         </div>
-        <div class="promo-note"><div class="promo-dot"></div> Top 4 gaat door naar de Finales</div>
+        <div class="promo-note"><div class="promo-dot"></div> Top 2 gaat door naar de Finales</div>
       </div>
     </div>`;
 }
@@ -352,7 +352,7 @@ function buildFinalesPanel(matches) {
     const dimH = m.home ? '' : 'style="color:rgba(255,255,255,0.35)"';
     const dimA = m.away ? '' : 'style="color:rgba(255,255,255,0.35)"';
 
-    let bottomHTML = `<div class="finale-info">Finalisten worden bepaald na de poulfase</div>`;
+    let bottomHTML = `<div class="finale-info">Finalisten worden bepaald na de groepsfase</div>`;
     if (fPlayed) {
       const hs = parseInt(m.home_score), as = parseInt(m.away_score);
       const isDraw = hs === as;
